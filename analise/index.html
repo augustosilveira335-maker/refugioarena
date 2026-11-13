@@ -1667,20 +1667,20 @@ footer i{font-style:normal;color:var(--or2)}
             <div><span>Reunião de resultado</span><b>1/mês</b></div>
           </div>
           <div class="preco-rec">
-            <div class="preco" id="precoBox"><span class="por">R$ 2.500<small> /mês</small></span></div>
+            <div class="preco" id="precoBox"><span class="por">R$ 3.100<small> /mês</small></span></div>
             <button class="pill laranja" id="liberar" type="button">Desbloquear investimento <span class="seta">→</span></button>
           </div>
           <div class="calc">
             <label for="ticket">Quanto paga por mês um aluno de aula na Refúgio?</label>
             <div class="cx"><span>R$</span><input id="ticket" inputmode="numeric" autocomplete="off" placeholder="valor do Marcelo"></div>
-            <output for="ticket" id="calcOut" aria-live="polite">Assinatura mais verba mínima somam R$ 4.000 por mês.</output>
+            <output for="ticket" id="calcOut" aria-live="polite">Assinatura mais verba mínima somam R$ 4.600 por mês.</output>
           </div>
         </article>
         <article class="pl">
           <h3>Captação + Google</h3>
           <p>Tudo da Captação mais anúncios na pesquisa do Google.</p>
           <ul><li><svg class="ic" aria-hidden="true"><use href="#ic-ok"/></svg>Tudo da Captação</li><li><svg class="lg lg-gads" role="img" aria-label="Google Ads"><use href="#lg-gads"/></svg>Anúncios em "beach tennis zona sul" e "aula de beach tennis"</li></ul>
-          <span class="vl preco">R$ 3.200<small> /mês</small></span>
+          <span class="vl preco">R$ 4.030<small> /mês</small></span>
         </article>
       </div>
     </div>
@@ -1977,9 +1977,9 @@ footer i{font-style:normal;color:var(--or2)}
   var tk = d.getElementById('ticket'), out = d.getElementById('calcOut');
   if (tk) tk.addEventListener('input', function(){
     var v = parseInt(tk.value.replace(/\D/g, ''), 10);
-    if (!v){ out.textContent = 'Assinatura mais verba mínima somam R$ 4.000 por mês.'; return; }
+    if (!v){ out.textContent = 'Assinatura mais verba mínima somam R$ 4.600 por mês.'; return; }
     tk.value = v.toLocaleString('pt-BR');
-    var n = Math.ceil(4000 / v);
+    var n = Math.ceil(4600 / v);
     out.innerHTML = n <= 1 ? 'Um aluno novo nesse valor já paga a assinatura e a verba mínima.' : '<b>' + n + '</b> alunos novos de aula pagam a assinatura e a verba mínima do mês.';
   });
 
